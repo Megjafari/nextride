@@ -1,4 +1,6 @@
-﻿export default function Hero() {
+﻿import showroom from '../assets/images/showroom.webp'
+
+export default function Hero() {
   return (
     <section id="hem" className="pt-[72px] min-h-svh grid grid-cols-1 md:grid-cols-2">
 
@@ -11,9 +13,7 @@
           </span>
         </div>
 
-        <h1
-          className="font-['Cormorant_Garamond'] text-[clamp(52px,6vw,88px)] font-light leading-none tracking-wide text-[#0f0f0f] mb-2"
-        >
+        <h1 className="font-['Cormorant_Garamond'] text-[clamp(52px,6vw,88px)] font-light leading-none tracking-wide text-[#0f0f0f] mb-2">
           NextRide
         </h1>
 
@@ -41,13 +41,15 @@
         </div>
       </div>
 
-      {/* Right – bildbild */}
-      <div className="relative bg-[#1a1a1a] min-h-[320px] md:min-h-full order-1 md:order-2 flex items-end">
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-[#333]">
-          <span className="text-6xl opacity-20">🚗</span>
-          <p className="text-[10px] tracking-[2px] uppercase text-[#444]">Bild på bil här</p>
-        </div>
-        <div className="relative z-10 w-full p-8 bg-gradient-to-t from-black/80 to-transparent">
+      {/* Right – showroom bild */}
+      <div className="relative min-h-[320px] md:min-h-full order-1 md:order-2">
+        <img
+          src={showroom}
+          alt="NextRide showroom"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 z-10 p-8">
           <p className="text-[9px] font-semibold tracking-[2.5px] uppercase text-[#C9A96E] mb-1">
             Köper · Säljer · Byter
           </p>

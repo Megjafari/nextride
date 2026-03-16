@@ -1,13 +1,18 @@
-﻿export default function About() {
+﻿import exterior from '../assets/images/exterior.webp'
+
+export default function About() {
   const tags = ['Personbilar', 'Transportbilar', 'Inbyte', 'Bilvård & Rekond']
 
   return (
     <section id="om-oss" className="grid grid-cols-1 md:grid-cols-2">
 
       {/* Bild */}
-      <div className="bg-[#e8e4de] min-h-[300px] md:min-h-full flex flex-col items-center justify-center gap-3 text-[#bbb]">
-        <span className="text-6xl opacity-25">🚙</span>
-        <p className="text-[10px] tracking-[2px] uppercase text-[#aaa]">Bild på firman</p>
+      <div className="relative min-h-[300px] md:min-h-full">
+        <img
+          src={exterior}
+          alt="NextRide exteriör"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
 
       {/* Text */}
