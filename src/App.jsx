@@ -6,12 +6,14 @@ import Detailing from './components/Detailing'
 import Hours from './components/Hours'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import StatsBand from './components/StatsBand'
 
 export default function App() {
   return (
     <>
       <Navbar />
       <Hero />
+      <StatsBand />
       <About />
       <Services />
       <Detailing />
