@@ -69,11 +69,18 @@ export default function Hours() {
           468 30 Vargön
         </p>
 
-        {/* Map placeholder */}
-        <div className="bg-[#1a1a1a] border border-[#2a2a2a] aspect-video flex flex-col items-center justify-center gap-3">
-          <span className="text-4xl opacity-20">📍</span>
-          <p className="text-[10px] tracking-[2px] uppercase text-[#444]">Google Maps här</p>
-        </div>
+            <div className="aspect-video w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2093.2454359712083!2d12.388475476490106!3d58.35553058858534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464524852eb568c9%3A0xad7f49b533a41456!2zU3RvcmVnw6VyZHN2w6RnZW4gOCwgNDY4IDMwIFZhcmfDtm4!5e0!3m2!1ssv!2sse!4v1773680151710!5m2!1ssv!2sse"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="NextRide karta"
+              />
+            </div>
 
         <a
           href={`https://maps.google.com/?q=Storegårdsvägen+8+Vargön`}
